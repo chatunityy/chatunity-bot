@@ -10,7 +10,7 @@ import yargs from 'yargs'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const require = createRequire(__dirname) 
 const { name, author } = require(join(__dirname, './package.json')) 
-const { say } = cfonts
+const { say } = CFonts
 const rl = createInterface(process.stdin, process.stdout)
 
 say('\nChatunity-\nbot', {
