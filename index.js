@@ -1,4 +1,4 @@
-console.log('Preparo bixby...')
+console.log('Preparo ChatUNity-bot...')
 import { join, dirname } from 'path'
 import { createRequire } from "module";
 import { fileURLToPath } from 'url'
@@ -16,7 +16,7 @@ const rl = createInterface(process.stdin, process.stdout)
 say('ChatUnity-Bot', {
  font: 'block',
  align: 'center',
- colors: ['magentaBright']
+ colors: ['cyan']
 })
 
 var isRunning = false

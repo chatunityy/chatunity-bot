@@ -16,9 +16,9 @@
 "eslint": "eslint .",
 "eslintfix": "eslint --fix ."
 },
-"homepage": "https://github.com/MoonContentCreator/BixbyBot-Md",
+"homepage": "https://github.com/MoonContentCreator/Bot-Md",
 "author": {
-"name": "MoonContentCreator"
+"name": "ChatUnity"
 },
 "repository": {
 "type": "git",

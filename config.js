@@ -55,7 +55,7 @@ global.APIKeys = {
 
 //────────────────────────────
 global.imagen1 = ['./media/menu1.jpg']
-global.imagen4 = fs.readFileSync('./bixbyvision16.png')
+global.imagen4 = fs.readFileSync('./chatunity.png')
 //────────────────────────────
 
 // Sticker WM (Nome del pacchetto degli sticker)
