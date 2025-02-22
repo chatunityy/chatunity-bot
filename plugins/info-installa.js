@@ -31,7 +31,7 @@ let prova = { "key": {"participants":"0@s.whatsapp.net", "remoteJid": "status@br
 let info = `
 『💬』 ══ •⊰✰⊱• ══ 『💬』
 𝐒𝐂𝐀𝐑𝐈𝐂𝐀 𝐂𝐇𝐀𝐓𝐔𝐍𝐈𝐓𝐘-𝐁𝐎𝐓
-https://github.com/chatunityy/chatunity-bot
+A breve disponibile...
 『💬』 ══ •⊰✰⊱• ══ 『💬』
 `.trim() 
 conn.reply(m.chat, info,prova, m, {
