@@ -4,7 +4,13 @@ import { createRequire } from "module";
 import { fileURLToPath } from 'url'
 import { setupMaster, fork } from 'cluster'
 import { watchFile, unwatchFile } from 'fs'
-import CFonts from 'cfonts';
+let CFonts;
+try {
+  CFonts = await import('cfonts');
+} catch (err) {
+  console.error('Failed to load cfonts module:', err);
+  process.exit(1);
+}
 import { createInterface } from 'readline'
 import yargs from 'yargs'
 const __dirname = dirname(fileURLToPath(import.meta.url))
