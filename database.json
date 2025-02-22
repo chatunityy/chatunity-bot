@@ -1,8 +1,8 @@
 {
   "users": {
     "8619858371809@s.whatsapp.net": {
-      "messaggi": 583,
-      "exp": 4829,
+      "messaggi": 586,
+      "exp": 4848,
       "limit": 20,
       "money": null,
       "blasphemy": 0,
@@ -157,8 +157,8 @@
       "muto": false
     },
     "393803482529@s.whatsapp.net": {
-      "messaggi": 75,
-      "exp": 70,
+      "messaggi": 78,
+      "exp": 79,
       "limit": 20,
       "money": null,
       "blasphemy": 0,
@@ -223,8 +223,8 @@
       "money": null
     },
     "120363395384147247@g.us": {
-      "messaggi": 6,
-      "exp": 21,
+      "messaggi": 7,
+      "exp": 25,
       "limit": 20,
       "money": null,
       "blasphemy": 0,
@@ -327,8 +327,8 @@
       "money": null
     },
     "393505943868@s.whatsapp.net": {
-      "messaggi": 39,
-      "exp": 191,
+      "messaggi": 40,
+      "exp": 194,
       "limit": 20,
       "money": null,
       "blasphemy": 0,
@@ -579,10 +579,10 @@
       "money": null
     },
     "393914586731@s.whatsapp.net": {
-      "messaggi": 7,
-      "exp": 111,
+      "messaggi": 9,
+      "exp": 144,
       "limit": 20,
-      "money": 0,
+      "money": null,
       "blasphemy": 0,
       "msg": {},
       "warn": 0,
@@ -595,10 +595,20 @@
       "muto": false
     },
     "120363404550667233@g.us": {
-      "messaggi": 1,
-      "exp": null,
-      "limit": null,
-      "money": null
+      "messaggi": 2,
+      "exp": 9,
+      "limit": 20,
+      "money": null,
+      "blasphemy": 0,
+      "msg": {},
+      "warn": 0,
+      "joincount": 2,
+      "premium": false,
+      "premiumDate": -1,
+      "tprem": 0,
+      "premiumTime": 0,
+      "name": {},
+      "muto": false
     },
     "47867980951683@lid": {
       "messaggi": 1,
@@ -951,7 +961,7 @@
       "antiPorno": true,
       "muto": false,
       "expired": 0,
-      "messaggi": 20,
+      "messaggi": 21,
       "blasphemy": 0,
       "premium": false,
       "premiumTime": 0,
@@ -990,7 +1000,7 @@
       "antiPorno": true,
       "muto": false,
       "expired": 0,
-      "messaggi": 340,
+      "messaggi": 343,
       "blasphemy": 0,
       "premium": false,
       "premiumTime": 0,
@@ -1496,7 +1506,7 @@
       "antiPorno": true,
       "muto": false,
       "expired": 0,
-      "messaggi": 7,
+      "messaggi": 8,
       "blasphemy": 0,
       "premium": false,
       "premiumTime": 0,
@@ -1999,7 +2009,7 @@
       "antiPorno": true,
       "muto": false,
       "expired": 0,
-      "messaggi": 78,
+      "messaggi": 84,
       "blasphemy": 0,
       "premium": false,
       "premiumTime": 0,
@@ -2112,10 +2122,10 @@
       "lastSuccess": 1740225384423
     },
     "calcolatrice.js": {
-      "total": 6,
-      "success": 6,
-      "last": 1740234787696,
-      "lastSuccess": 1740234787696
+      "total": 7,
+      "success": 7,
+      "last": 1740234800779,
+      "lastSuccess": 1740234800779
     },
     "fun-negro.js": {
       "total": 9,
