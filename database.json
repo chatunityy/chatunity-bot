@@ -1,11 +1,11 @@
 {
   "users": {
     "8619858371809@s.whatsapp.net": {
-      "messaggi": 586,
-      "exp": 4848,
+      "messaggi": 602,
+      "exp": 4935,
       "limit": 20,
       "money": null,
-      "blasphemy": 0,
+      "blasphemy": 1,
       "msg": {},
       "warn": 0,
       "joincount": 2,
@@ -141,8 +141,8 @@
       "money": null
     },
     "14045333545@s.whatsapp.net": {
-      "messaggi": 47,
-      "exp": 243,
+      "messaggi": 57,
+      "exp": 302,
       "limit": 20,
       "money": null,
       "blasphemy": 0,
@@ -157,10 +157,10 @@
       "muto": false
     },
     "393803482529@s.whatsapp.net": {
-      "messaggi": 78,
-      "exp": 79,
+      "messaggi": 79,
+      "exp": 98,
       "limit": 20,
-      "money": null,
+      "money": 0,
       "blasphemy": 0,
       "msg": {},
       "warn": 0,
@@ -615,6 +615,12 @@
       "exp": null,
       "limit": null,
       "money": null
+    },
+    "152737643819027@lid": {
+      "messaggi": 1,
+      "exp": null,
+      "limit": null,
+      "money": null
     }
   },
   "chats": {
@@ -961,7 +967,7 @@
       "antiPorno": true,
       "muto": false,
       "expired": 0,
-      "messaggi": 21,
+      "messaggi": 22,
       "blasphemy": 0,
       "premium": false,
       "premiumTime": 0,
@@ -1000,7 +1006,7 @@
       "antiPorno": true,
       "muto": false,
       "expired": 0,
-      "messaggi": 343,
+      "messaggi": 370,
       "blasphemy": 0,
       "premium": false,
       "premiumTime": 0,
@@ -2200,10 +2206,10 @@
       "lastSuccess": 1740234490894
     },
     "fun-sega.js": {
-      "total": 3,
-      "success": 3,
-      "last": 1740234601274,
-      "lastSuccess": 1740234601274
+      "total": 4,
+      "success": 4,
+      "last": 1740235170622,
+      "lastSuccess": 1740235170622
     },
     "fun-ditalino.js": {
       "total": 2,
