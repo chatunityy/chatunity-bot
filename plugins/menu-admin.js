@@ -59,7 +59,7 @@ let handler = async (_0x4955de, {
                 }
             },
             'participant': _0x421427[_0x30ade0(0x106)]
-        }, _0x259d4e = ('\x0a══════\x20•⊰✧‌⊱•\x20══════\x0a-\x20' + _0xeb2cc9 + _0x30ade0(0x105) + _0xeb2cc9 + _0x30ade0(0x103) + _0xeb2cc9 + _0x30ade0(0x12c) + _0xeb2cc9 + _0x30ade0(0x116) + _0xeb2cc9 + _0x30ade0(0x137) + _0xeb2cc9 + '𝐭𝐚𝐠𝐚𝐥𝐥\x20/\x20𝐦𝐚𝐫𝐜𝐚𝐫\x0a-\x20' + _0xeb2cc9 + _0x30ade0(0x135) + _0xeb2cc9 + '𝐬𝐞𝐭𝐰𝐞𝐥𝐜𝐨𝐦𝐞\x0a-\x20' + _0xeb2cc9 + _0x30ade0(0x109) + _0xeb2cc9 + _0x30ade0(0x126) + _0xeb2cc9 + _0x30ade0(0x125) + _0xeb2cc9 + _0x30ade0(0x12f))[_0x30ade0(0x133)](), _0xf5c7c0 = global['db']['data'][_0x30ade0(0x13d)] || _0x30ade0(0x113);
+        }, _0x259d4e = ('\x0a『💬』 ══ •⊰✰⊱• ══ 『💬』\x0a-\x20' + _0xeb2cc9 + _0x30ade0(0x105) + _0xeb2cc9 + _0x30ade0(0x103) + _0xeb2cc9 + _0x30ade0(0x12c) + _0xeb2cc9 + _0x30ade0(0x116) + _0xeb2cc9 + _0x30ade0(0x137) + _0xeb2cc9 + '𝐭𝐚𝐠𝐚𝐥𝐥\x20/\x20𝐦𝐚𝐫𝐜𝐚𝐫\x0a-\x20' + _0xeb2cc9 + _0x30ade0(0x135) + _0xeb2cc9 + '𝐬𝐞𝐭𝐰𝐞𝐥𝐜𝐨𝐦𝐞\x0a-\x20' + _0xeb2cc9 + _0x30ade0(0x109) + _0xeb2cc9 + _0x30ade0(0x126) + _0xeb2cc9 + _0x30ade0(0x125) + _0xeb2cc9 + _0x30ade0(0x12f))[_0x30ade0(0x133)](), _0xf5c7c0 = global['db']['data'][_0x30ade0(0x13d)] || _0x30ade0(0x113);
     _0x4b9a49[_0x30ade0(0x11d)](_0x4955de['chat'], {
         'text': _0x259d4e,
         'contextInfo': {
@@ -80,9 +80,9 @@ function _0x1183() {
         'toString',
         'zsntY',
         '𝐰𝐚𝐫𝐧\x20/\x20𝐮𝐧𝐰𝐚𝐫𝐧\x0a-\x20',
-        '120363175463922716@newsletter',
+        '120363259442839354@newsletter',
         'chats',
-        '𝐩𝐮𝐥𝐢𝐳𝐢𝐚\x20+\x20𝐩𝐫𝐞𝐟𝐢𝐬𝐬𝐨\x0a══════\x20•⊰✧‌⊱•\x20══════',
+        '𝐩𝐮𝐥𝐢𝐳𝐢𝐚\x20+\x20𝐩𝐫𝐞𝐟𝐢𝐬𝐬𝐨\x0a『💬』 ══ •⊰✰⊱• ══ 『💬』',
         'entries',
         'endsWith',
         '555177ItTysh',
@@ -117,14 +117,14 @@ function _0x1183() {
         '73322ZGaQmq',
         '10688742BjSCqS',
         '1237870TqJdTA',
-        '𝐁𝐢𝐱𝐛𝐲𝐁𝐨𝐭-𝐌𝐝\x20🔮',
+        '𝐂𝐡𝐚𝐭𝐔𝐧𝐢𝐭𝐲-𝐁𝐨𝐭\x20💬',
         'VmrgF',
         'menu',
         '𝐦𝐮𝐭𝐚\x20/\x20𝐬𝐦𝐮𝐭𝐚\x0a-\x20',
         'map',
         'memoryUsage',
         '8dutzDm',
-        'https://telegra.ph/file/2f38b3fd9cfba5935b496.jpg',
+        'https://i.ibb.co/HpkzmrMZ/chatunity-jpg.jpg',
         'user',
         'data',
         'sendMessage',

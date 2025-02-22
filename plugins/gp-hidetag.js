@@ -1,43 +1,81 @@
-import { generateWAMessageFromContent } from '@whiskeysockets/baileys' 
- import * as fs from 'fs' 
- let handler = async (m, { conn, text, participants, isOwner, isAdmin }) => { 
- try {   
- let users = participants.map(u => conn.decodeJid(u.id)) 
- let q = m.quoted ? m.quoted : m || m.text || m.sender 
- let c = m.quoted ? await m.getQuotedObj() : m.msg || m.text || m.sender 
- let msg = conn.cMod(m.chat, generateWAMessageFromContent(m.chat, { [m.quoted ? q.mtype : 'extendedTextMessage']: m.quoted ? c.message[q.mtype] : { text: '' || c }}, {}), text || q.text, conn.user.jid, { mentions: users }) 
- await conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id }) 
+import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
+import * as fs from 'fs'
+
+let handler = async (m, { conn, text, participants, isOwner, isAdmin }) => {
+  let users = participants.map(u => u.id)
+  let quoted = m.quoted ? m.quoted : m
+  let mime = (quoted.msg || quoted).mimetype || ''
+  let isMedia = /image|video|sticker|audio/.test(mime)
+  let nomeDelBot = global.db.data.nomedelbot || `𝐂𝐡𝐚𝐭𝐔𝐧𝐢𝐭𝐲`
   
- } catch {   
-  
- /** 
- [ By @NeKosmic || https://github.com/NeKosmic/ ] 
- **/   
-  
- let users = participants.map(u => conn.decodeJid(u.id)) 
- let quoted = m.quoted ? m.quoted : m 
- let mime = (quoted.msg || quoted).mimetype || '' 
- let isMedia = /image|video|sticker|audio/.test(mime) 
- let more = String.fromCharCode(8206) 
- let masss = more.repeat(850) 
- let htextos = `${text ? text : ".hidetag"}` 
- if ((isMedia && quoted.mtype === 'imageMessage') && htextos) { 
- var mediax = await quoted.download?.() 
- conn.sendMessage(m.chat, { image: mediax, mentions: users, caption: htextos, mentions: users }, { quoted: m }) 
- } else if ((isMedia && quoted.mtype === 'videoMessage') && htextos) { 
- var mediax = await quoted.download?.() 
- conn.sendMessage(m.chat, { video: mediax, mentions: users, mimetype: 'video/mp4', caption: htextos }, { quoted: m }) 
- } else if ((isMedia && quoted.mtype === 'audioMessage') && htextos) { 
- var mediax = await quoted.download?.() 
- conn.sendMessage(m.chat, { audio: mediax, mentions: users, mimetype: 'audio/mp4', fileName: `Hidetag.mp3` }, { quoted: m }) 
- } else if ((isMedia && quoted.mtype === 'stickerMessage') && htextos) { 
- var mediax = await quoted.download?.() 
- conn.sendMessage(m.chat, {sticker: mediax, mentions: users}, { quoted: m }) 
- } else { 
- await conn.relayMessage(m.chat, {extendedTextMessage:{text: `${masss}\n${htextos}\n`, ...{ contextInfo: { mentionedJid: users, externalAdReply: { thumbnail: imagen1, sourceUrl: 'stocazzo' }}}}}, {}) 
- }}} 
- handler.command = /^(hidetag|notificar|menziona)$/i 
- handler.group = true 
- handler.admin = true 
- handler.botAdmin = true 
- export default handler
+  // Create invisible tag using zero-width joiner
+  let more = String.fromCharCode(8206)
+  let hide = more.repeat(850)
+  let htextos = text ? text : ''
+
+  const messageOptions = {
+    contextInfo: {
+      mentionedJid: users,
+      forwardingScore: 999,
+      isForwarded: true,
+      forwardedNewsletterMessageInfo: {
+        newsletterJid: '120363259442839354@newsletter',
+        serverMessageId: '',
+        newsletterName: `${nomeDelBot}`
+      }
+    }
+  }
+
+  try {
+    if (isMedia && quoted.mtype === 'imageMessage') {
+      let media = await quoted.download()
+      await conn.sendMessage(m.chat, { 
+        image: media, 
+        caption: htextos + hide,
+        mentions: users,
+        ...messageOptions
+      })
+    } else if (isMedia && quoted.mtype === 'videoMessage') {
+      let media = await quoted.download()
+      await conn.sendMessage(m.chat, { 
+        video: media,
+        caption: htextos + hide,
+        mentions: users,
+        ...messageOptions
+      })
+    } else if (isMedia && quoted.mtype === 'audioMessage') {
+      let media = await quoted.download()
+      await conn.sendMessage(m.chat, { 
+        audio: media,
+        mimetype: 'audio/mp4',
+        mentions: users,
+        ...messageOptions
+      })
+    } else if (isMedia && quoted.mtype === 'stickerMessage') {
+      let media = await quoted.download()
+      await conn.sendMessage(m.chat, {
+        sticker: media,
+        mentions: users,
+        ...messageOptions
+      })
+    } else {
+      await conn.sendMessage(m.chat, {
+        text: htextos + hide,
+        mentions: users,
+        ...messageOptions
+      })
+    }
+  } catch (error) {
+    console.error('Error in hidetag:', error)
+    m.reply('Error processing hidetag command')
+  }
+}
+
+handler.help = ['hidetag']
+handler.tags = ['group']
+handler.command = /^(hidetag|notificar|menziona)$/i
+handler.group = true
+handler.admin = true
+handler.botAdmin = true
+
+export default handler

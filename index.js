@@ -13,10 +13,11 @@ const { name, author } = require(join(__dirname, './package.json'))
 const { say } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
 
-say('\nBixby\nVision', {
-font: 'block',
-align: 'center',
-color: ['cyan', 'green']})
+say('ChatUnity-Bot', {
+ font: 'block',
+ align: 'center',
+ colors: ['magentaBright']
+})
 
 var isRunning = false
 /**
@@ -28,13 +29,14 @@ if (isRunning) return
 isRunning = true
 let args = [join(__dirname, file), ...process.argv.slice(2)]
 
-say('ediz dan e fab', {
+say(`Developed By • ChatUnity `, {
 font: 'console',
 align: 'center',
-color: ['cyan', 'blue']})
+colors: ['blueBright']
+})
   
 setupMaster({
-exec: args[0],
+exec: args[0],        
 args: args.slice(1), })
 let p = fork()
 p.on('message', data => {

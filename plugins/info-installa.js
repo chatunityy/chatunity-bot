@@ -20,36 +20,19 @@ let neww = performance.now()
 let speed = (neww - old).toFixed(4)
 let prova = { "key": {"participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo"
 }, "message": { 
-"orderMessage": { text: '𝐁𝐢𝐱𝐛𝐲 𝐕𝐢𝐬𝐢𝐨𝐧 🔮',
+"orderMessage": { text: '𝐒𝐂𝐀𝐑𝐈𝐂𝐀 𝐂𝐇𝐀𝐓𝐔𝐍𝐈𝐓𝐘-𝐁𝐎𝐓 💬',
 "itemCount": 2023,
 "status": 1,
 "surface" : 1,
-    "message": '𝐒𝐜𝐚𝐫𝐢𝐜𝐚 𝐁𝐢𝐱𝐛𝐲 𝐕𝐢𝐬𝐢𝐨𝐧 🔮',
+    "message": '𝐒𝐂𝐀𝐑𝐈𝐂𝐀 𝐂𝐇𝐀𝐓𝐔𝐍𝐈𝐓𝐘-𝐁𝐎𝐓 💬',
 "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:;Unlimited;;;\nFN:Unlimited\nORG:Unlimited\nTITLE:\nitem1.TEL;waid=15395490858:+1 (539) 549-0858\nitem1.X-ABLabel:Unlimited\nX-WA-BIZ-DESCRIPTION:ofc\nX-WA-BIZ-NAME:Unlimited\nEND:VCARD`
 }}, "participant": "0@s.whatsapp.net"
 }
 let info = `
-══════ •⊰✦⊱• ══════
-𝐂𝐨𝐦𝐚𝐧𝐝𝐢 𝐩𝐞𝐫 𝐢𝐧𝐬𝐭𝐚𝐥𝐥𝐚𝐫𝐞
-✧ cd
-✧ termux-setup-storage
-✧ apt update 
-✧ pkg upgrade 
-✧ pkg install git -y
-✧ pkg install nodejs -y
-✧ pkg install ffmpeg -y
-✧ pkg install imagemagick -y
-✧ pkg install yarn
-✧ git clone https://github.com/MoonContentCreator/BixbyBot-Md.git
-✧ cd BixbyBot-Md 
-✧ yarn install 
-✧ npm install
-✧ npm update
-✧ npm start
-
-𝐒𝐜𝐚𝐫𝐢𝐜𝐚𝐫𝐞 𝐥𝐚 𝐜𝐚𝐫𝐭𝐞𝐥𝐥𝐚 𝐝𝐞𝐥 𝐛𝐨𝐭 📱
-✧ cd /sdcard && rm -rf BixbyBot-Md && git clone https://github.com/MoonContentCreator/BixbyBot-Md.git && cd BixbyBot-Md && npm start
-══════ •⊰✦⊱• ══════
+『💬』 ══ •⊰✰⊱• ══ 『💬』
+𝐒𝐂𝐀𝐑𝐈𝐂𝐀 𝐂𝐇𝐀𝐓𝐔𝐍𝐈𝐓𝐘-𝐁𝐎𝐓
+https://github.com/chatunityy/chatunity-bot
+『💬』 ══ •⊰✰⊱• ══ 『💬』
 `.trim() 
 conn.reply(m.chat, info,prova, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 

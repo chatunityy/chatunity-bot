@@ -41,7 +41,7 @@ async function handler(m, { conn: _envio, usedPrefix }) {
     let neww = performance.now();
     let speed = (neww - old).toFixed(4);
     
-    let message = users.map((v, index) => `${index + 1} @${v.user.jid.replace(/[^0-9]/g, '')}\n🔮 𝐍𝐨𝐦𝐞: ${v.user.name || '-'}\n🟢 𝐀𝐭𝐭𝐢𝐯𝐢𝐭𝐚': ${uptime}\n🚀 𝐕𝐞𝐥𝐨𝐜𝐢𝐭𝐚' : ${speed} 𝐬`).join('\n\n')
+    let message = users.map((v, index) => `${index + 1} @${v.user.jid.replace(/[^0-9]/g, '')}\n💬 𝐍𝐨𝐦𝐞: ${v.user.name || '-'}\n🟢 𝐀𝐭𝐭𝐢𝐯𝐢𝐭𝐚': ${uptime}\n🚀 𝐕𝐞𝐥𝐨𝐜𝐢𝐭𝐚' : ${speed} 𝐬`).join('\n\n')
     const replyMessage = message.length === 0 ? '> ⓘ 𝐍𝐨𝐧 𝐜𝐢 𝐬𝐨𝐧𝐨 𝐚𝐥𝐭𝐫𝐢 𝐬𝐮𝐛-𝐛𝐨𝐭𝐬 𝐜𝐨𝐧𝐧𝐞𝐬𝐬𝐢 𝐚𝐥 𝐦𝐨𝐦𝐞𝐧𝐭𝐨.' : message
     const totalUsers = users.length
     const responseMessage = `${replyMessage.trim()}`.trim()

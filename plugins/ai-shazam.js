@@ -198,7 +198,7 @@ const shazam = new Shazam(), handler = async (_0x1a3580, {
                     throw _0x4b9969(0xb0);
                 }
                 const _0x5d0a0c = _0x4b9969(0xa7) + _0xac1941, _0x4d2688 = await conn[_0x4b9969(0x97)](_0x5d0a0c);
-                let _0x4eafe1 = global['db'][_0x4b9969(0x90)]['nomedelbot'] || '𝐁𝐢𝐱𝐛𝐲𝐁𝐨𝐭-𝐌𝐝\x20🔮', _0x3096ea = {
+                let _0x4eafe1 = global['db'][_0x4b9969(0x90)]['nomedelbot'] || '𝐂𝐡𝐚𝐭𝐔𝐧𝐢𝐭𝐲-𝐁𝐨𝐭\x20💬', _0x3096ea = {
                         'key': {
                             'participants': _0x1b90a6[_0x4b9969(0xc5)],
                             'fromMe': ![],
