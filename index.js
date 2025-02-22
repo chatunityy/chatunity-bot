@@ -1,25 +1,19 @@
-console.log('Preparo ChatUNity-bot...')
+console.log('Preparo bixby...')
 import { join, dirname } from 'path'
 import { createRequire } from "module";
 import { fileURLToPath } from 'url'
 import { setupMaster, fork } from 'cluster'
 import { watchFile, unwatchFile } from 'fs'
-let CFonts;
-try {
-  CFonts = await import('cfonts');
-} catch (err) {
-  console.error('Failed to load cfonts module:', err);
-  process.exit(1);
-}
+import cfonts from 'cfonts';
 import { createInterface } from 'readline'
 import yargs from 'yargs'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const require = createRequire(__dirname) 
 const { name, author } = require(join(__dirname, './package.json')) 
-const { say } = CFonts
+const { say } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
 
-say('\nChatunity-\nbot', {
+say('\nchatunity\nbot', {
 font: 'block',
 align: 'center',
 color: ['cyan', 'green']})

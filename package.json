@@ -1,6 +1,6 @@
 { 
-"name": "chatunity-bot",
-"version": "1.0",
+"name": "Bixby-Bot-MD",
+"version": "2.2",
 "description": "Nada",
 "main": "index.js",
 "type": "module",
@@ -16,16 +16,16 @@
 "eslint": "eslint .",
 "eslintfix": "eslint --fix ."
 },
-"homepage": "https://github.com/chatunityy/chatunity-bot",
+"homepage": "https://github.com/MoonContentCreator/BixbyBot-Md",
 "author": {
 "name": "MoonContentCreator"
 },
 "repository": {
 "type": "git",
-"url": "git+https://github.com/chatunityy/chatunity-bot.git"
+"url": "git+https://github.com/MoonContentCreator/BixbyBot-Md.git"
 },
 "bugs": {
-"url": "https://github.com/chatunityy/chatunity-bot/issues"
+"url": "https://github.com/MoonContentCreator/BixbyBot-Md/issues"
 },
 "license": "GPL-3.0-or-later",
 "dependencies": {
@@ -37,7 +37,7 @@
 "@shineiichijo/marika": "^2.0.6",
 "@vitalets/google-translate-api": "^8.0.0",
 "node-shazam": "*",
-"@whiskeysockets/baileys": "^3.5.0", 
+"@whiskeysockets/baileys": "github:nstar-y/Bail",
 "@xct007/frieren-scraper": "github:xct007/frieren-scraper",
 "acrcloud": "^1.4.0",
 "api-dylux": "^1.6.2",
