@@ -1,6 +1,6 @@
 { 
-"name": "Bixby-Bot-MD",
-"version": "2.2",
+"name": "chatunity-md",
+"version": "1.0",
 "description": "Nada",
 "main": "index.js",
 "type": "module",
@@ -18,7 +18,7 @@
 },
 "homepage": "https://github.com/MoonContentCreator/BixbyBot-Md",
 "author": {
-"name": "MoonContentCreator"
+"name": "chatunity"
 },
 "repository": {
 "type": "git",
